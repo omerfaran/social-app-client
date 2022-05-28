@@ -103,7 +103,7 @@ const CardPost = React.forwardRef(
                       style={{
                         cursor: "pointer",
                         maxHeight: "400px",
-                        width: "100%",
+                        width: "auto",
                       }}
                     />
                     {/* <Image
