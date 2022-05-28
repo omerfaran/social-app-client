@@ -1,0 +1,7 @@
+@media screen and (max-width: 390px) {
+  .messagesWrapper {
+    width: 87vw;
+    position: absolute;
+    left: 10px;
+  }
+}

@@ -1,0 +1,125 @@
+/* Not bad:
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* search bar top nav */
+.ui.input>input {
+  width: 500px;
+}
+
+@media screen and (max-width: 970px) {
+  .ui.input>input {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .ui.input>input {
+    width: 220px;
+  }
+}
+
+.ui.secondary.segment {
+  background-color: #fff;
+}
+
+:root {
+  --progressBar: #54d1db;
+}
+
+body {
+  /* background: var(--bodyBg); */
+  background-color: #F0F2F5;
+  
+  /* font-family: 'Signika Negative', sans-serif; */
+}
+
+#navbarColor {
+  background-color: #060b26;
+}
+
+.spanLikesList:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mySpinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #16d47b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+  margin: auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.refreshIcon {
+  text-align: center;
+}
+
+.ui.styled.accordion .content {
+  margin: 0;
+  padding: 0.5em 1em 0.75em !important;
+}
+
+
+
+/* HAVERI */
+
+.headerMiddle {
+  text-align: center;
+  color: #777;
+}
+
+.colorP {
+  color: #5D5C5C;
+  /* color: red; */
+}
+
+.containerBox {
+  padding: 2.5rem;
+  background-color: white;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 5px 4px #aaaaaa;
+  transition: all 0.1s ease-in;
+}
+
+.boxShadowGentle {
+  box-shadow: 3px 3px 3px 0px #aaaaaa;
+  width: 100%;
+}
+
+.containerBox:hover {
+  box-shadow: 5px 7px 5px 4px #aaaaaa;
+}
+
+.createdAt {
+  color:  "#5D5C5C";
+}
+
+
+/* ::-webkit-datetime-edit-year-field {
+  font-weight: bold;
+} */
+
+/* .textCenter {
+  text-align: center;
+  padding: 5rem;
+} */

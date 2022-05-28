@@ -1,0 +1,21 @@
+.activeWide {
+  margin-left: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+.activeOverlay {
+  /* margin-left: 250px; */
+  transition: all 0.2s ease-in-out;
+}
+
+.overlay {
+  background-color: rgba(63, 63, 63, 0.578);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}

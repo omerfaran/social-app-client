@@ -1,0 +1,114 @@
+.navbar {
+  /* background-color: #060b26; */
+  position: fixed;
+  top: 0;
+  height: 60px;
+  /* width was 200px, revert back if problems */
+  width: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  z-index: 15;
+}
+
+.refToggleBar {
+  cursor: pointer;
+}
+
+.menuBars {
+  margin-left: 2rem;
+  font-size: 2.2rem;
+  background-color: none;
+}
+
+.navMenu {
+  /* background-color: #060b26; */
+  z-index: 15;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.navMenu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+/* When screen is not widest: Narrow */
+
+.navMenuNarrow {
+  z-index: 15;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.navMenuNarrow.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.navText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.navText a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.navText a:hover {
+  background-color: #1a83ff;
+  color: #f5f5f5;
+}
+.navMenuItems {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbarToggle {
+  /* background-color: #060b26; */
+  color: #f5f5f5;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logout {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* .span {
+    margin-left: 16px;
+} */

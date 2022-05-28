@@ -1,0 +1,24 @@
+.search {
+    width: 500px;
+    .input>input {
+        width: 900px !important;
+    }
+}
+
+.search .ui.input>input {
+    width: 9200px;
+}
+
+.search.input>input {
+    width: 9200px;
+}
+/* .search > .input {
+    width: 100%
+} */
+
+
+:global(#app) {
+        .ui.input>input {
+            width: 900px;
+          }
+}

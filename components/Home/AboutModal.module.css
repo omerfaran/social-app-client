@@ -1,0 +1,15 @@
+.title {
+  color: rgba(32, 35, 87, 0.884);
+  /* align-items: center; */
+  text-align: center;
+  font-weight: 300;
+}
+
+.title h2 {
+  font-size: 1.7rem;
+}
+
+.youtubeContainer {
+  padding: 2rem;
+  text-align: center;
+}

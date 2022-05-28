@@ -1,0 +1,12 @@
+.container {
+  padding: 2.5rem;
+  background-color: white;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  transition: all 0.1s ease-in;
+}
+
+.container:hover {
+  box-shadow: 5px 7px 5px #aaaaaa;
+}
