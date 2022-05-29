@@ -143,11 +143,11 @@ function Index({ user, postsData, errorLoading }) {
       )}
 
       {/* <Segment> */}
-      <div className="containerBox">
-        <CreatePost user={user} setPosts={setPosts} />
-      </div>
-
       <Container>
+        <div className="containerBox">
+          <CreatePost user={user} setPosts={setPosts} />
+        </div>
+
         <InfiniteScroll
           hasMore={hasMore}
           next={fetchDataOnScroll}

@@ -49,7 +49,7 @@ const CardPost = React.forwardRef(
 
     return (
       <>
-        <div className={`${classes.container} containerBox`}>
+        <div className={`containerBox ${classes.container}`}>
           {toggleMinimize && (
             <div
               className={classes.minimizeContainer}
@@ -92,19 +92,21 @@ const CardPost = React.forwardRef(
             className={`${!post.minimize && classes.show} ${classes.minimize}`}
           >
             {/* {!post.minimize && ( */}
-            <Segment basic>
+            <Segment basic className={classes.innerContainer}>
               <Card color="teal" fluid>
                 {post.picUrl && (
-                  <div style={{}}>
+                  <div className={classes.postDiv}>
                     <img
+                      className={classes.postImage}
                       onClick={() => setShowModal(true)}
                       alt="Post Image"
                       src={post.picUrl}
-                      style={{
-                        cursor: "pointer",
-                        maxHeight: "400px",
-                        width: "auto",
-                      }}
+                      style={
+                        {
+                          // backgroundSize: "cover",
+                          // background: "transparent no-repeat center",
+                        }
+                      }
                     />
                     {/* <Image
                       src={post.picUrl}

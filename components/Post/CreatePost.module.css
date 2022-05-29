@@ -95,3 +95,39 @@
     opacity: 1;
   }
 }
+
+.postImage {
+  width: auto;
+  cursor: pointer;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 770px) {
+  .postImage {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .postImage {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .postImage {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* .innerContainer {
+    padding: 0 !important;
+  } */
+
+  .container {
+    padding: 1rem;
+    padding-left: 0.3rem;
+    padding-top: 2rem;
+  }
+}
