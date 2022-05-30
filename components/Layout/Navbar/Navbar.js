@@ -27,11 +27,10 @@ const Navbar = ({ toggle }) => {
         <AboutModal modalClose={closeModal} showModal={showModal} />
       )}
       <nav className={classes.nav}>
-        <Link href="/">
-          <a>
-            <GiBeech className={classes.logo} />
-          </a>
-        </Link>
+        <a>
+          <GiBeech className={classes.logo} />
+        </a>
+
         <FaBars className={classes.bars} onClick={toggle} />
         {/* <div className={classes.navMenu}>
           <Link href="/about" activeStyle>
