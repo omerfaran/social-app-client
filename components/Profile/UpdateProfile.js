@@ -69,7 +69,7 @@ function UpdateProfile({ Profile, width }) {
 
             if (media !== null && !profilePicUrl) {
               setLoading(false);
-              return setErrorMsg("Error Uploading Image");
+              return setErrorMsg("Error, try a smaller file");
             }
 
             await profileUpdate(

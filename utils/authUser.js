@@ -19,7 +19,8 @@ export const registerUser = async (
 
     // setToken(res.data);
     cookie.set("token", res.data);
-    router.push("/" + user.username + "?editProfile=true");
+    // router.push("/" + user.username + "?editProfile=true");
+    router.push("/");
   } catch (error) {
     const errorMsg = catchErrors(error);
     setError(errorMsg);

@@ -60,7 +60,7 @@ function CreatePost({ user, setPosts }) {
       picUrl = await uploadPic(media);
       if (!picUrl) {
         setLoading(false);
-        return setError("Error Uploading Image");
+        return setError("Error, try a smaller file");
       }
     }
 

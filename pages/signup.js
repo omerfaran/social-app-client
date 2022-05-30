@@ -77,11 +77,7 @@ function Signup() {
 
       const CancelToken = axios.CancelToken;
 
-      const res = await axios.get(`${baseUrl}/api/signup/${username}`, {
-        cancelToken: new CancelToken((canceler) => {
-          cancel = canceler;
-        }),
-      });
+      const res = await axios.get(`${baseUrl}/api/signup/${username}`);
 
       if (errorMsg !== null) setErrorMsg(null);
 
@@ -126,7 +122,7 @@ function Signup() {
   return (
     <div>
       <HeaderMessage />
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div className={classes.wrapperDivFlex} style={{}}>
         <div className={classes.videoContainer}>
           <video
             className={classes.videoBox}

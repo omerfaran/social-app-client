@@ -1,29 +1,35 @@
 /* Not bad:
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* search bar top nav */
-.ui.input>input {
+.ui.input > input {
   width: 500px;
 }
 
 @media screen and (max-width: 970px) {
-  .ui.input>input {
+  .ui.input > input {
     width: 280px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .ui.input>input {
+  .ui.input > input {
     width: 220px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .ui.input > input {
+    width: 166px;
   }
 }
 
@@ -37,8 +43,8 @@
 
 body {
   /* background: var(--bodyBg); */
-  background-color: #F0F2F5;
-  
+  background-color: #f0f2f5;
+
   /* font-family: 'Signika Negative', sans-serif; */
 }
 
@@ -78,8 +84,6 @@ body {
   padding: 0.5em 1em 0.75em !important;
 }
 
-
-
 /* HAVERI */
 
 .headerMiddle {
@@ -88,7 +92,7 @@ body {
 }
 
 .colorP {
-  color: #5D5C5C;
+  color: #5d5c5c;
   /* color: red; */
 }
 
@@ -111,9 +115,8 @@ body {
 }
 
 .createdAt {
-  color:  "#5D5C5C";
+  color: "#5D5C5C";
 }
-
 
 /* ::-webkit-datetime-edit-year-field {
   font-weight: bold;

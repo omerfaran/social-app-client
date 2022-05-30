@@ -1,7 +1,7 @@
 .formContainer {
-    margin-left: 5rem;
-    
-    /* padding-top: 0 !important;
+  margin-left: 5rem;
+
+  /* padding-top: 0 !important;
     margin-top: 0 !important; */
 }
 
@@ -10,25 +10,43 @@
 } */
 
 .videoContainer {
-    padding: 1.5rem;
-    background-color: white;
-    margin-right: 5rem;
-    margin-top: 1rem;
-    box-shadow: 5px 5px 5px #aaaaaa;
-    transition: all 0.1s ease-in;
-    height: 80%;
+  padding: 1.5rem;
+  background-color: white;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  transition: all 0.1s ease-in;
+  height: 80%;
 }
 
 .videoContainer:hover {
-    box-shadow: 5px 7px 5px #aaaaaa;
+  box-shadow: 5px 7px 5px #aaaaaa;
 }
 
 .segmentContainer {
-    box-shadow: 5px 5px 5px #aaaaaa !important;
-    transition: all 0.1s ease-in;
+  box-shadow: 5px 5px 5px #aaaaaa !important;
+  transition: all 0.1s ease-in;
 }
 
 .segmentContainer:hover {
-    box-shadow: 5px 7px 5px #aaaaaa !important;
+  box-shadow: 5px 7px 5px #aaaaaa !important;
 }
 
+.wrapperDivFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1050px) {
+  .videoContainer {
+    display: none;
+  }
+
+  .wrapperDivFlex {
+    display: block;
+  }
+
+  .formContainer {
+    margin-left: 0;
+  }
+}
